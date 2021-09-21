@@ -10,7 +10,6 @@ retrieving customer account details and retrieving statements by given dates and
 - **Spring Boot**     - Server side framework
 - **JPA**             - Entity framework
 - **Lombok**          - Provides automated getter/setters
-- **Actuator**        - Application insights on the fly
 - **Swagger**         - In-built swagger documentation support
 - **Junit**           - Unit testing framework
 - **H2**              - H2 database embedded version
