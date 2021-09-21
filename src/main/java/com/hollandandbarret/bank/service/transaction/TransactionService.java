@@ -15,5 +15,5 @@ import java.util.Locale;
 public interface TransactionService {
     TransactionDetails create(TransactionDetails transactionDetails) throws BankException;
     List<BalanceDto> getTransactions(long customerNumber, LocalDateTime from, LocalDateTime to) throws BankException;
-
+    String callStarlingBankApi( String accountUid);
 }
