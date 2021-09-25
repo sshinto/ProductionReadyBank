@@ -1,18 +1,12 @@
 package com.hollandandbarret.bank.exception;
 
 import com.hollandandbarret.bank.errors.BankErrors;
-import org.springframework.http.HttpStatus;
 
 /**
  * Created by Savitha Shinto.
  */
 public class BankException extends Exception {
-    private BankErrors bankErrors;
-
-    public BankException(String errors, HttpStatus internalServerError) {
-        super(errors);
-    }
-
+    private final BankErrors bankErrors;
     public BankErrors getBankErrors() {
         return bankErrors;
     }

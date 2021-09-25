@@ -4,7 +4,6 @@ import com.hollandandbarret.bank.utils.AccountType;
 import lombok.*;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 @Builder

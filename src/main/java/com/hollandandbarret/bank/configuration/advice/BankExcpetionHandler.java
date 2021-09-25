@@ -17,14 +17,12 @@ public class BankExcpetionHandler {
 
     @ExceptionHandler(BankException.class)
     protected ResponseEntity<String> handleBankException(BankException ex){
-        logger.info("Exception {}" + ex.toString() );
         return new ResponseEntity<>(
                 ex.getBankErrors().getErrorMessage(),   ex.getBankErrors().getHttpStatusCode());
     }
 
     @ExceptionHandler(Exception.class)
     protected ResponseEntity<String> handleInternalException(Exception ex){
-        logger.info("Exception {}" + ex.toString() );
         return new ResponseEntity<>(
                "There are some issues in the system. Please try again later", HttpStatus.BAD_REQUEST);
     }

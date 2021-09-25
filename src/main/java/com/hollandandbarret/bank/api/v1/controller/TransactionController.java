@@ -24,7 +24,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
@@ -62,7 +61,6 @@ public class TransactionController {
 
     @PostMapping("/create")
     public ResponseEntity<TransactionDetails> createTransactions(@RequestBody TransactionCreateRequest request) throws BankException {
-        logger.debug("Transaction Create {}");
         TransactionDetails transactionDetails = new TransactionDetails();
         transactionDetails.setTransactionType(TransactionType.valueOf(request.getTransactionType()));
         transactionDetails.setAmount(request.getAmount());
@@ -89,7 +87,7 @@ public class TransactionController {
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Customer transaction details retrieved successfully",
                     content = { @Content(mediaType = "application/json",
-                            schema = @Schema(implementation = AccountController.class)) }),
+                    schema = @Schema(implementation = AccountController.class)) }),
     })
 
     @PostMapping(value = "/statement")
