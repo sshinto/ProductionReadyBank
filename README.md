@@ -34,8 +34,9 @@ http://localhost:8080/swagger-ui.html
 
 
 ## Calling Starling Bank API
-Starling Bank api is called in the endpoint http://localhost:8080/v1/starlingbank/balancestatement/67141534-3893-483c-8aff-fe4f3b6291a3
-Please use the account number = 67141534-3893-483c-8aff-fe4f3b6291a3
+Starling Bank api is called in this endpoint http://localhost:8080/v1/starlingbank/balancestatement/67141534-3893-483c-8aff-fe4f3b6291a3
+Swagger URL: http://localhost:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/starling-bank-controller/getStarlingBankBalance
+Please use the account number for testing = 67141534-3893-483c-8aff-fe4f3b6291a3
 
 ## Unit test cases
 There are multiple unit test cases written to cover the different components of the application.
