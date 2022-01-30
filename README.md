@@ -1,8 +1,8 @@
-# HollandBarretteBank
-Holland And Barrent Bank
+# ProductReadyBank
+Product Ready Bank
 
 ## Description
-Holland Barrette Bank is a production ready Spring boot starter kit application which contains functionality like retrieving customer details, 
+Product Ready Bank is a production ready Spring boot starter kit application which contains functionality like retrieving customer details, 
 retrieving customer account details and retrieving statements by given dates and creating transactions.
 
 ## Technology
