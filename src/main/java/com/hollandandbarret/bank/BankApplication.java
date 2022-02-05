@@ -10,6 +10,12 @@ public class BankApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BankApplication.class, args);
+			//HOW AOP WORKS INTERNALLY
+		FactoryService factoryService = new FactoryService();
+		AccountServiceImpl accountService = (AccountServiceImpl) factoryService.getBean(
+				"AccountService");
+		accountService.getAccountName();
+
 	}
 	@Bean
 	public ModelMapper modelMapper() {
